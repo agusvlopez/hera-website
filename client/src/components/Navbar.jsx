@@ -4,8 +4,8 @@ function Navbar() {
 
     return (
         <>
-            <nav className='bg-zinc-500'>
-                <ul>
+            <nav>
+                <ul className='flex justify-around p-6 pb-0'>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/">Sobre mi</Link></li>
                     <li><Link to="/">Tarot</Link></li>

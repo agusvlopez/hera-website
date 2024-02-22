@@ -2,6 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bg-primary: #F5EBE2;
+  --color-primary: #34332E;
+  --font-primary: "Martel Sans", sans-serif;
+  --font-title: "Mate SC", serif;
+}
+
+body,
+header {
+  box-sizing: border-box;
+  background-color: var(--bg-primary);
+  color: var(--color-primary);
+  font-family: var(--font-primary);
+}
+
+header {
+  font-weight: 600;
+}
+
+nav {
+  max-width: 80%;
+  margin: auto;
+}
+
+.home--title {
+  font-family: var(--font-title);
+  text-transform: uppercase;
+  font-size: 100px;
+}
+
+.home--subtitle {
+  font-family: var(--font-title);
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.sunLeft--image {
+  background-image: url("./covers/sun-vector--left.png");
+  width: 186px;
+  height: 500px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sunRight--image {
+  background-image: url("./covers/sun-vector--right.png");
+  display: inline-block;
+  width: 186px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .card-product-container {
   margin: 5vh auto;
 }
