@@ -29,31 +29,29 @@ nav {
 .home--title {
   font-family: var(--font-title);
   text-transform: uppercase;
-  font-size: 100px;
+  font-size: 70px;
+}
+
+.home--description {
+  font-family: var(--font-title);
+  text-transform: uppercase;
+  font-size: 18px;
+  background-color: var(--bg-primary);
+}
+
+.sunLeft--image {
+  background-image: url("./covers/sun-vector--left.png");
+  max-width: 320px;
+  height: 500px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .home--subtitle {
   font-family: var(--font-title);
   text-transform: uppercase;
-  font-size: 24px;
-}
-
-.sunLeft--image {
-  background-image: url("./covers/sun-vector--left.png");
-  width: 186px;
-  height: 500px;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.sunRight--image {
-  background-image: url("./covers/sun-vector--right.png");
-  display: inline-block;
-  width: 186px;
-  height: 500px;
-  background-repeat: no-repeat;
-  background-size: cover;
+  font-size: 48px;
 }
 
 .card-product-container {
@@ -89,4 +87,24 @@ nav {
 
 .card-product button:hover {
   opacity: 0.7;
+}
+
+@media screen and (min-width: 768px) {
+
+  .sunRight--image {
+    background-image: url("./covers/sun-vector--right.png");
+    display: inline-block;
+    width: 186px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .home--title {
+    font-size: 110px;
+  }
+
+  .home--description {
+    font-size: 22px;
+  }
 }
