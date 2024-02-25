@@ -4,21 +4,31 @@
 
 :root {
   --bg-primary: #F5EBE2;
+  --bg-white: #fff7f7;
+  --bg-button: #6143A4;
+  --bg-button-hover: #6243a4cb;
   --color-primary: #34332E;
+  --color-button: #F5EBE2;
+  --color-menu: #CE9647;
   --font-primary: "Martel Sans", sans-serif;
   --font-title: "Mate SC", serif;
 }
 
+html {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 body,
 header {
-  box-sizing: border-box;
-  background-color: var(--bg-primary);
+  background-color: var(--bg-white);
   color: var(--color-primary);
   font-family: var(--font-primary);
 }
 
 header {
   font-weight: 600;
+  background-color: var(--bg-primary);
 }
 
 nav {
@@ -26,24 +36,61 @@ nav {
   margin: auto;
 }
 
-.home--title {
-  font-family: var(--font-title);
-  text-transform: uppercase;
-  font-size: 120px;
+.navbar-principal li {
+  margin-bottom: 0.5rem;
+  transition: all 0.8s ease;
 }
 
-.home--description {
-  font-family: var(--font-title);
-  text-transform: uppercase;
-  font-size: 24px;
+.navbar-principal li:hover {
+  color: var(--color-menu);
+}
+
+.navbar--logo {
+  width: 110px;
+  padding: 0.5rem;
+}
+
+.navbar--button {
+  background-color: transparent;
+  color: var(--color-menu);
+}
+
+.navbar--button:hover {
+  background-color: transparent;
+}
+
+.section-home {
+  background-image: url("./covers/sun-vector--left.png");
+  background-repeat: no-repeat;
+  background-size: auto;
   background-color: var(--bg-primary);
 }
 
-
-.home--subtitle {
+.section-home--title {
   font-family: var(--font-title);
   text-transform: uppercase;
-  font-size: 48px;
+  font-size: 110px;
+}
+
+.section-home--description {
+  font-family: var(--font-title);
+  text-transform: uppercase;
+  font-size: 20px;
+  background-color: var(--bg-primary);
+}
+
+button {
+  background-color: var(--bg-button);
+  padding: 1rem 0.8rem 0.8rem 0.8rem;
+  border-radius: 2rem;
+  color: var(--color-button);
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 1s ease;
+}
+
+button:hover {
+  background-color: var(--bg-button-hover);
 }
 
 .card-product-container {
@@ -85,9 +132,26 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+  background-color: var(--bg-white);
+}
+
+.section-about--container {
+  background-color: var(--bg-white);
+}
+
+.section-about--subtitle {
+  font-family: var(--font-title);
+  text-transform: uppercase;
+  font-size: 48px;
+}
+
+.section-about--text p {
+  margin-bottom: 1rem;
 }
 
 .section-about--images {
+  background-color: var(--bg-white);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
@@ -95,6 +159,30 @@ nav {
   transition: all 1s ease;
   width: 70%;
   margin-bottom: 1rem;
+}
+
+.section-about--stars-left {
+  background-image: url("./covers/stars--left.png");
+  display: inline-block;
+  width: 40px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.section-about--stars-right {
+  background-image: url("./covers/stars--right.png");
+  display: inline-block;
+  width: 40px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 260px;
+  right: 10px;
 }
 
 .images-container img {
@@ -106,18 +194,18 @@ nav {
 }
 
 .images-container .image-3 {
-  width: 20vw;
+  width: 25vw;
   top: 10px;
   transform: rotate(-8deg);
 }
 
 .images-container .image-2 {
-  width: 20vw;
+  width: 25vw;
   transform: rotate(-1deg);
 }
 
 .images-container .image-1 {
-  width: 20vw;
+  width: 25vw;
   top: 10px;
   transform: rotate(8deg);
 }

@@ -6,25 +6,36 @@ function About() {
 
     return (
         <>
-            <section className="container max-w-5xl mx-auto mt-6 mb-6 p-4 pt-6 gap-8 h-full md:h-screen">
-                <div id="about" className="p-2 section-about md:flex md:gap-6">
+            <section id='about' className="container max-w-5xl mx-auto mt-6 mb-6 p-4 pt-6 gap-8 h-full">
+                <div id="about" className="p-2 md:flex md:gap-6 section-about--container">
                     <div className="section-about--text">
-                        <h2 className='home--subtitle mb-4'>Sobre Hera</h2>
-                        <p>¡Hola, <span className='font-bold'>soy Patri!</span></p>
+                        <span className='section-about--stars-left'></span>
+                        <h2 className='section-about--subtitle mb-4'>Sobre Hera</h2>
+                        <div className='section-about--text'>
+                            <p>¡Hola, <span className='font-bold'>soy Patri!</span></p>
 
-                        <p>¡Bienvenidos a <strong>Hera</strong>! Un espacio en donde la confidencialidad es absoluta. Hago <strong>Lecturas de Tarot</strong>, <strong>Ayuda espiritual con velas</strong> y <strong>Reiki</strong>.</p>
+                            <p>¡Bienvenidos a <strong>Hera</strong>! Un espacio en donde la confidencialidad es absoluta.</p>
 
-                        <p>Mi lema es que siempre se trasmita <span className='font-bold'>mucha luz</span>, <span className='font-bold'>buena energía</span>, <span className='font-bold'>sinceridad</span> y <span className='font-bold'>transparencia</span>. Lo cual aplico en cada <strong>Lectura de Tarot</strong>, <strong>Ayuda espiritual</strong> y <strong>Reiki</strong>.</p>
+                            <p>Hago <strong>Lecturas de Tarot</strong>, <strong>Ayuda espiritual con velas</strong> y <strong>Reiki</strong>.</p>
+
+                            <p>Mi lema es que siempre se trasmita <span className='font-bold'>mucha luz</span>, <span className='font-bold'>buena energía</span>, <span className='font-bold'>sinceridad</span> y <span className='font-bold'>transparencia</span>. Lo cual aplico en todas las áreas.</p>
+
+                            <p>Soy de <strong>Argentina</strong> pero todo lo hago de manera <strong>online</strong> asique si hablas español no importa desde dónde me hables, <span className='font-bold'>¡con gusto y buena energía te atenderé!</span></p>
+                        </div>
+                        <span className='section-about--stars-right'></span>
+                        <div className='mt-8 mb-8'>
+                            <button>¡Quiero una sesión!</button>
+                        </div>
                     </div>
-                    <div class="section-about--images">
-                        <div class="images-container">
-                            <img src={aboutMe1} alt="Patri con las cartas del Tarot." class="image-3" />
+                    <div className="section-about--images">
+                        <div className="images-container">
+                            <img src={aboutMe1} alt="Patri con las cartas del Tarot." className="image-3" />
                         </div>
-                        <div class="images-container">
-                            <img src={aboutMe2} alt="Patri con las cartas del Tarot." class="image-2" />
+                        <div className="images-container">
+                            <img src={aboutMe2} alt="Patri con las cartas del Tarot." className="image-2" />
                         </div>
-                        <div class="images-container">
-                            <img src={aboutMe3} alt="Patri con las cartas del Tarot." class="image-1" />
+                        <div className="images-container">
+                            <img src={aboutMe3} alt="Patri con las cartas del Tarot." className="image-1" />
                         </div>
                     </div>
                 </div>

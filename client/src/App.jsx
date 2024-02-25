@@ -4,6 +4,7 @@ import { AppMain } from './components/AppMain';
 import NotFoundPage from "./pages/NotFoundPage";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import HomePage from './pages/HomePage';
+import About from './components/About';
 
 const route = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const route = createBrowserRouter([
       {
         path: '',
         element: <HomePage />
+      },
+      {
+        path: 'about',
+        element: <About />
       },
       {
         path: 'product',
