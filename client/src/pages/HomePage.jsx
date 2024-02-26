@@ -1,4 +1,5 @@
 import About from "../components/About";
+import Services from "../components/Services";
 
 export default function HomePage() {
     return (
@@ -15,6 +16,9 @@ export default function HomePage() {
             </div>
             <div className='p-4 mt-8 h-screen section-about'>
                 <About />
+            </div>
+            <div className='p-4 mt-8 h-screen section-about'>
+                <Services />
             </div>
         </>
     )

@@ -234,6 +234,70 @@ button:hover {
   }
 }
 
+.section-services--subtitle {
+  font-family: var(--font-title);
+  text-transform: uppercase;
+  font-size: 48px;
+  text-align: center;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  max-width: 300px;
+}
+
+.card-img--container img {
+  max-height: 328px;
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 40px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  font-family: var(--font-title);
+  border-bottom: 1px var(--color-primary) solid;
+}
+
+.card-text--container {
+  border-bottom: 1px #34332ea8 solid;
+}
+
+.card-text {
+  font-size: 1em;
+  margin-bottom: 0.5rem;
+}
+
+.card-message--container {
+  padding-top: 10px;
+}
+
+.card-message {
+  font-size: 0.9em;
+  margin-bottom: 0.2rem;
+}
+
+.card-price--container {
+  padding: 3px 0 10px 0;
+}
+
+.card-price--span {
+  font-family: var(--font-title);
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
 @media screen and (min-width: 768px) {
 
   .sunLeft--image {
@@ -291,4 +355,6 @@ button:hover {
   .images-container:nth-child(3) img {
     left: 95px;
   }
+
+  .card {}
 }
