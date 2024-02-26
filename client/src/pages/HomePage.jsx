@@ -1,5 +1,6 @@
 import About from "../components/About";
 import Services from "../components/Services";
+import Reiki from "../components/reiki";
 
 export default function HomePage() {
     return (
@@ -17,8 +18,11 @@ export default function HomePage() {
             <div className='p-4 mt-8 h-screen section-about'>
                 <About />
             </div>
-            <div className='p-4 mt-8 h-screen section-about'>
+            <div className='p-4 mt-8 h-full section-services'>
                 <Services />
+            </div>
+            <div className='p-4 mt-8 h-full section-reiki'>
+                <Reiki />
             </div>
         </>
     )

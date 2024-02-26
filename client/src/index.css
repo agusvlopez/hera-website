@@ -128,7 +128,8 @@ button:hover {
   opacity: 0.7;
 }
 
-.section-about {
+.section-about,
+.section-services {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -234,7 +235,8 @@ button:hover {
   }
 }
 
-.section-services--subtitle {
+.section-services--subtitle,
+.section-reiki--subtitle {
   font-family: var(--font-title);
   text-transform: uppercase;
   font-size: 48px;
@@ -270,10 +272,6 @@ button:hover {
   border-bottom: 1px var(--color-primary) solid;
 }
 
-.card-text--container {
-  border-bottom: 1px #34332ea8 solid;
-}
-
 .card-text {
   font-size: 1em;
   margin-bottom: 0.5rem;
@@ -288,7 +286,7 @@ button:hover {
   margin-bottom: 0.2rem;
 }
 
-.card-price--container {
+.card-content--price-container {
   padding: 3px 0 10px 0;
 }
 
@@ -296,6 +294,61 @@ button:hover {
   font-family: var(--font-title);
   font-size: 1.5em;
   font-weight: 700;
+}
+
+.card-content--link-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-content--link-container a {
+  color: var(--bg-button);
+  font-weight: 700;
+  transition: all 0.5s ease;
+  padding-right: 0.5rem;
+}
+
+.card-content--link-container a:hover {
+  color: var(--bg-button-hover);
+  font-weight: 700;
+}
+
+.section-reiki {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  background-color: var(--bg-primary);
+}
+
+.section-reiki--container {
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+}
+
+.section-reiki--container-subtitle {
+  margin-top: -35px;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+}
+
+.section-reiki--subtitle {
+  background-color: var(--bg-primary);
+  padding: 0 0.5rem;
+}
+
+.section-reiki--img img {
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-reiki--text p {
+  margin-bottom: 0.5rem;
+}
+
+.section-reiki--text p:last-child {
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -326,7 +379,8 @@ button:hover {
     font-size: 22px;
   }
 
-  .section-about {
+  .section-about,
+  .section-services {
     flex-direction: row;
     justify-content: center;
   }
@@ -356,5 +410,7 @@ button:hover {
     left: 95px;
   }
 
-  .card {}
+  .card {
+    max-width: 280px;
+  }
 }
