@@ -6,7 +6,7 @@ function About() {
 
     return (
         <>
-            <section id='about' className="container max-w-5xl mx-auto mt-6 mb-6 p-4 pt-6 gap-8 h-full">
+            <section id='about' className="container max-w-4xl mx-auto mt-6 mb-6 p-6 pt-6 gap-8 h-full">
                 <div id="about" className="p-2 md:flex md:gap-6 section-about--container">
                     <div className="section-about--text">
                         <span className='section-about--stars-left'></span>

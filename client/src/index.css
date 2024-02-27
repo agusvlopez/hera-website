@@ -165,19 +165,19 @@ button:hover {
 .section-about--stars-left {
   background-image: url("./covers/stars--left.png");
   display: inline-block;
-  width: 40px;
+  width: 30px;
   height: 60px;
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
   top: 5px;
-  left: 5px;
+  left: 25px;
 }
 
 .section-about--stars-right {
   background-image: url("./covers/stars--right.png");
   display: inline-block;
-  width: 40px;
+  width: 30px;
   height: 60px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -249,6 +249,7 @@ button:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 10px;
   max-width: 300px;
+  margin-bottom: 20px;
 }
 
 .card-img--container img {
@@ -324,6 +325,7 @@ button:hover {
 .section-reiki--container {
   border: 1px solid #ccc;
   border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .section-reiki--container-subtitle {
@@ -349,6 +351,66 @@ button:hover {
 
 .section-reiki--text p:last-child {
   margin-bottom: 0;
+}
+
+.section-about--stars-left-dark {
+  background-image: url("./covers/stars--left-dark.png");
+  display: inline-block;
+  width: 30px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.section-about--stars-right-dark {
+  background-image: url("./covers/stars--right-dark.png");
+  display: inline-block;
+  width: 30px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: -48px;
+  right: 5px;
+  margin-bottom: 1rem;
+}
+
+.section-newsLetter {
+  background-image: url("./covers/banner--newsletter-purple.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-newsLetter--container {
+  padding: 20px;
+  text-align: center;
+  background-color: #f5ebe2bb;
+  width: fit-content;
+  margin: auto;
+  border-radius: 1rem;
+}
+
+.section-newsLetter--subtitle {
+  font-family: var(--font-title);
+  color: var(--bg-button);
+  font-size: 32px;
+  text-align: center;
+}
+
+.section-newsLetter--text {
+  font-weight: 600;
+}
+
+.section-newsLetter--form {
+  margin: 16px auto;
+}
+
+.section-newsLetter--button {
+  background-color: var(--bg-button);
+  box-shadow: -25px 32px 75px -33px rgb(202, 202, 202);
 }
 
 @media screen and (min-width: 768px) {
@@ -412,5 +474,13 @@ button:hover {
 
   .card {
     max-width: 280px;
+  }
+
+  .section-newsLetter--subtitle {
+    font-size: 40px;
+  }
+
+  .section-newsLetter--text {
+    font-size: 18px;
   }
 }
