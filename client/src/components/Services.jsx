@@ -23,24 +23,28 @@ function Services() {
                 </div>
                 <div className='md:flex gap-1 md:flex-wrap container md:justify-center'>
                     <Card
+                        id="1"
                         title="Lectura completa de Tarot"
                         price="$3000"
-                        paragraph={truncateText("Esta Lectura está orientada a la introspección y reflexión. Consultá a las cartas acerca del tema que quieras o un panorama general para un momento de introspección y reflexión acerca del momento que estés atravesando.")}
+                        description={truncateText("Esta Lectura está orientada a la introspección y reflexión. Consultá a las cartas acerca del tema que quieras o un panorama general para un momento de introspección y reflexión acerca del momento que estés atravesando.")}
                         imageUrl={lecturaCompleta}
                     />
                     <Card
+                        id="2"
                         title="Lectura de Tarot: Método Celta"
                         price="$2500"
                         paragraph={truncateText("El método Celta se trata de una lectura de Tarot milenaria que se lee solo con los Arcanos Mayores.")}
                         imageUrl={metodoCelta}
                     />
                     <Card
+                        id="3"
                         title="Preguntas por si o por no a las cartas"
                         price="$500 por pregunta"
                         paragraph={truncateText("Si tenes alguna pregunta especifica por si o por no, esta es la opción: te respondo por si o por no con las cartas.")}
                         imageUrl={preguntas}
                     />
                     <Card
+                        id="4"
                         title="Ayuda espiritual con velas"
                         price="$2500"
                         paragraph={truncateText("La Ayuda espiritual con velas consiste en una ayuda energética con velas para destrabar algún miedo concreto que sientas o alguna traba que tengas.")}

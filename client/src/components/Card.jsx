@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Card = ({ title, price, paragraph, imageUrl }) => {
+const Card = ({ id, title, price, paragraph, imageUrl }) => {
 
     return (
         <div className='card'>
@@ -18,6 +19,9 @@ const Card = ({ title, price, paragraph, imageUrl }) => {
                 <div className='card-content--link-container'>
                     <a href='/'>Leer más</a>
                 </div>
+            </div>
+            <div className='flex justify-center pb-4'>
+                <Link to={`./product/${id}`} key={id} className='card-link'>Me resuena, ¡lo quiero!</Link>
             </div>
         </div>
     );

@@ -1,9 +1,25 @@
 import About from "../components/About";
 import Services from "../components/Services";
 import Reiki from "../components/reiki";
-import bannerNewsletter from "../covers/banner-newsletter.jpg";
+import 'firebase/firestore';
+import { addSubscriber } from "../firebase/subscribers";
+import { useState } from "react";
 
 export default function HomePage() {
+    const [email, setEmail] = useState('');
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            await addSubscriber({ email });
+            setEmail(''); // Limpiar el campo de correo electrónico después de enviar
+            alert('¡Gracias por suscribirte!');
+        } catch (error) {
+            console.error('Error al guardar el correo electrónico:', error);
+            alert('Hubo un error al procesar tu solicitud. Por favor, inténtalo de nuevo más tarde.');
+        }
+    };
+
     return (
         <>
             <div className='max-w-screen relative'>
@@ -30,13 +46,14 @@ export default function HomePage() {
                     <h2 className='section-newsLetter--subtitle mb-2'>¿Querés recibir todas las novedades?</h2>
                     <p className='section-newsLetter--text'>¡Suscribite al Newsletter para recibirlas!</p>
                     <div className="section-newsLetter--form mt-4 max-w-md">
-                        <form action="">
+                        <form action="" onSubmit={handleSubmit} >
                             <label htmlFor="email" className='invisible'>Email</label>
                             <input
                                 id="email"
                                 type="email"
                                 placeholder="Escribí acá tu email..."
                                 className="p-2 pt-[10px] border rounded-l-md flex-grow"
+                                onChange={(e) => setEmail(e.target.value)}
                             />
                             <button
                                 type="submit"

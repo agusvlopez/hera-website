@@ -253,7 +253,7 @@ button:hover {
 }
 
 .card-img--container img {
-  max-height: 328px;
+  max-height: 306px;
 }
 
 .card-image {
@@ -390,7 +390,6 @@ button:hover {
   background-color: #f5ebe2bb;
   width: fit-content;
   margin: auto;
-  border-radius: 1rem;
 }
 
 .section-newsLetter--subtitle {
@@ -411,6 +410,34 @@ button:hover {
 .section-newsLetter--button {
   background-color: var(--bg-button);
   box-shadow: -25px 32px 75px -33px rgb(202, 202, 202);
+}
+
+footer {
+  font-family: var(--font-title);
+  text-transform: uppercase;
+  height: fit-content;
+  background-color: var(--bg-primary);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 10px;
+}
+
+.footer--img {
+  max-width: 110px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.footer--contact ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer--contact-icon {
+  width: 40px;
+  padding: 6px 2px;
 }
 
 @media screen and (min-width: 768px) {
@@ -476,11 +503,27 @@ button:hover {
     max-width: 280px;
   }
 
+  .section-newsLetter--container {
+    border-radius: 1rem;
+  }
+
   .section-newsLetter--subtitle {
     font-size: 40px;
   }
 
   .section-newsLetter--text {
     font-size: 18px;
+  }
+
+  footer {
+    padding: 40px;
+  }
+
+  .footer--img {
+    max-width: 130px;
+  }
+
+  .footer--contact-icon {
+    padding: 10px 2px;
   }
 }

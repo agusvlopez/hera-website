@@ -36,7 +36,7 @@ function Navbar() {
                         Sobre mi</a></li>
                     <li><Link to="/">Tarot</Link></li>
                     <li><Link to="/">Ayuda con velas</Link></li>
-                    <li><Link to="/">Reiki</Link></li>
+                    <li><a href="#reiki">Reiki</a></li>
                 </ul>
             </nav>
         </>
