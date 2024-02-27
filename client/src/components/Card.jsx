@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Card = ({ id, title, price, paragraph, imageUrl }) => {
+const Card = ({ id, title, price, description, imageUrl }) => {
 
     return (
         <div className='card'>
@@ -14,7 +14,7 @@ const Card = ({ id, title, price, paragraph, imageUrl }) => {
                     <span className='card-price--span'>{price}</span>
                 </div>
                 <div className='card-content--text-container'>
-                    <p className='card-text'>{paragraph}</p>
+                    <p className='card-text'>{description}</p>
                 </div>
                 <div className='card-content--link-container'>
                     <a href='/'>Leer más</a>

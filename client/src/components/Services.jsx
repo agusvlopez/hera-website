@@ -1,11 +1,27 @@
 import Card from "./Card";
-import lecturaCompleta from "../covers/services/lectura-completa.jpg";
-import metodoCelta from "../covers/services/metodo-celta.jpg";
-import preguntas from "../covers/services/preguntas.jpg";
-import ayudaEspiritual from "../covers/services/ayuda-con-velas.jpg";
+import { getServices } from "../firebase/services";
+import { useEffect, useState } from "react";
 
 function Services() {
+    const [servicesLoading, setServicesLoading] = useState(true);
+    const [services, setServices] = useState([]);
 
+    useEffect(() => {
+        const fetchServices = async () => {
+            try {
+                const allServices = await getServices();
+                setServices(allServices);
+                setServicesLoading(false);
+                console.log(allServices);
+            } catch (error) {
+                console.log('Error:', error);
+            }
+        };
+
+        fetchServices();
+    }, []);
+
+    console.log(services);
     const truncateText = (text) => {
         if (text.length > 100) {
             return text.substring(0, 100) + '...';
@@ -22,34 +38,17 @@ function Services() {
                     <p>No trato con temas relacionados a enfermedades.</p>
                 </div>
                 <div className='md:flex gap-1 md:flex-wrap container md:justify-center'>
-                    <Card
-                        id="1"
-                        title="Lectura completa de Tarot"
-                        price="$3000"
-                        description={truncateText("Esta Lectura está orientada a la introspección y reflexión. Consultá a las cartas acerca del tema que quieras o un panorama general para un momento de introspección y reflexión acerca del momento que estés atravesando.")}
-                        imageUrl={lecturaCompleta}
-                    />
-                    <Card
-                        id="2"
-                        title="Lectura de Tarot: Método Celta"
-                        price="$2500"
-                        paragraph={truncateText("El método Celta se trata de una lectura de Tarot milenaria que se lee solo con los Arcanos Mayores.")}
-                        imageUrl={metodoCelta}
-                    />
-                    <Card
-                        id="3"
-                        title="Preguntas por si o por no a las cartas"
-                        price="$500 por pregunta"
-                        paragraph={truncateText("Si tenes alguna pregunta especifica por si o por no, esta es la opción: te respondo por si o por no con las cartas.")}
-                        imageUrl={preguntas}
-                    />
-                    <Card
-                        id="4"
-                        title="Ayuda espiritual con velas"
-                        price="$2500"
-                        paragraph={truncateText("La Ayuda espiritual con velas consiste en una ayuda energética con velas para destrabar algún miedo concreto que sientas o alguna traba que tengas.")}
-                        imageUrl={ayudaEspiritual}
-                    />
+                    {services.map((service) => (
+
+                        <Card
+                            id={service.id}
+                            title={service.title}
+                            price={service.price}
+                            description={truncateText(service.description)}
+                            imageUrl={`./services/${service.image}`}
+                        />
+
+                    ))}
                 </div>
             </section>
         </>
