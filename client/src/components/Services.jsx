@@ -43,7 +43,7 @@ function Services() {
                         <Card
                             id={service.id}
                             title={service.title}
-                            price={service.price}
+                            price={`$${service.price}`}
                             description={truncateText(service.description)}
                             imageUrl={`./services/${service.image}`}
                         />

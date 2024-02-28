@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../covers/logo-2.png";
+import logo from "../covers/logo-sin-fondo.png";
 import instagramIcon from "../covers/icons/instagram.png";
 function Footer() {
 

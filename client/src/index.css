@@ -93,11 +93,24 @@ button:hover {
   background-color: var(--bg-button-hover);
 }
 
-.card-product-container {
-  margin: 5vh auto;
+.card-service--message {
+  text-align: center;
+  margin-top: 30px;
+  padding: 0 1rem;
 }
 
-.card-product {
+.card-service--container {
+  margin: 5vh auto;
+  padding: 0;
+  background-image: url("./covers/sun-vector--left.png");
+  background-repeat: no-repeat;
+}
+
+.card-service--data {
+  margin: auto;
+}
+
+.card-service {
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -106,26 +119,79 @@ button:hover {
   margin: 5vh auto;
 }
 
-.card-product img {
-  margin-top: 40px;
+.card-service img {
   width: 250px;
   height: 250px;
-}
-
-.card-product button {
-  border: none;
-  outline: 0;
   padding: 10px;
-  color: white;
-  background-color: #1bcb7f;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 15px;
 }
 
-.card-product button:hover {
+.card-service--text-container {
+  padding: 20px;
+}
+
+.card-service--title {
+  font-family: var(--font-title);
+  font-size: 32px;
+}
+
+.card-service--price {
+  font-family: var(--font-title);
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.card-service button:hover {
   opacity: 0.7;
+}
+
+.big-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.card-service--img-container {
+  cursor: pointer;
+}
+
+.small-images img {
+  border-radius: 1rem;
+}
+
+.small-images .card-service--img-container-1 {
+  grid-column: 1 / span 1;
+  width: 100%;
+}
+
+.small-images .card-service--img-container-2 {
+  grid-column: 2 / span 1;
+  width: 100%;
+}
+
+.small-images .card-service--img-container-3 {
+  grid-column: 3 / span 1;
+  width: 100%;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  padding: 1rem;
+}
+
+.big-image {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.small-images {
+  gap: 5px;
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  justify-content: space-between;
 }
 
 .section-about,
@@ -246,14 +312,51 @@ button:hover {
 .card {
   border: 1px solid #ccc;
   border-radius: 40px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 10px;
+  margin: 10px auto;
   max-width: 300px;
   margin-bottom: 20px;
 }
 
-.card-img--container img {
-  max-height: 306px;
+.card-service--img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-service--img-container img {
+  width: 100%;
+  border-radius: 40px;
+}
+
+.card-service--title {
+  border-bottom: 1px var(--color-primary) solid;
+}
+
+.card-service--price {
+  text-align: left;
+  padding: 10px 0;
+}
+
+.card-service--description {
+  text-align: left;
+  padding: 0 5px 15px 0;
+}
+
+.card-service--button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-service--button button {
+  border: none;
+  outline: 0;
+  margin-top: 10px;
+  padding: 15px 10px 10px 10px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  font-size: 15px;
+  width: 100%;
 }
 
 .card-image {
@@ -277,6 +380,19 @@ button:hover {
   font-size: 1em;
   margin-bottom: 0.5rem;
 }
+
+.card-link {
+  background-color: var(--bg-button);
+  color: var(--color-button);
+  padding: 1rem;
+  border-radius: 2rem;
+  transition: all 0.5s ease;
+}
+
+.card-link:hover {
+  background-color: var(--bg-button-hover);
+}
+
 
 .card-message--container {
   padding-top: 10px;
@@ -413,6 +529,7 @@ button:hover {
 }
 
 footer {
+  width: 100%;
   font-family: var(--font-title);
   text-transform: uppercase;
   height: fit-content;
@@ -424,7 +541,7 @@ footer {
 }
 
 .footer--img {
-  max-width: 110px;
+  max-width: 120px;
   padding: 5px;
   display: flex;
   align-items: center;
@@ -526,4 +643,21 @@ footer {
   .footer--contact-icon {
     padding: 10px 2px;
   }
+
+  .card-service--container {
+    min-height: 500px;
+
+  }
+
+  .card-service--data {
+    display: flex;
+    max-width: 70%;
+    max-height: 700px
+  }
+
+  .card-service--img-container img {
+    width: 100%;
+    border-radius: 40px;
+  }
+
 }
