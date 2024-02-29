@@ -1,11 +1,12 @@
+import { Link } from "react-router-dom";
 import reiki from "../covers/reiki-5.jpg";
 
 function Reiki() {
 
     return (
         <>
-            <section id='reiki' className="container max-w-5xl mx-auto mt-6 mb-6 p-4 pt-8 pb-8 gap-8 h-full section-reiki">
-                <span className='mt-[-28px] section-about--stars-left-dark'></span>
+            <section id='reiki' className="mx-auto gap-8 h-full section-reiki">
+                <span className='mt-[28px] ml-[20px] section-about--stars-left-dark'></span>
                 <div className='section-reiki--container max-w-3xl mx-auto'>
                     <div className='section-reiki--container-subtitle'>
                         <h2 className='section-reiki--subtitle mb-4'>Reiki</h2>
@@ -27,10 +28,12 @@ function Reiki() {
                         </div>
                     </div>
                     <div className='flex justify-center md:justify-end p-6 pt-0'>
-                        <button>¡Quiero una sesión de Reiki!</button>
+                        <Link to="./product/A8J82vdgqJmTCIYwmamc">
+                            <button>¡Quiero una sesión de Reiki!</button>
+                        </Link>
                     </div>
                 </div>
-                <span className='section-about--stars-right-dark'></span>
+                <span className='section-about--stars-right-dark mr-[18px]'></span>
             </section>
         </>
     )

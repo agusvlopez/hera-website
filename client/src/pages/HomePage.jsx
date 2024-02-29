@@ -36,7 +36,7 @@ export default function HomePage() {
                 <div className='p-4 mt-8 section-about'>
                     <About />
                 </div>
-                <div className='p-4 mt-8 h-full section-services'>
+                <div className='p-4 md:mt-8 h-full section-services'>
                     <Services />
                 </div>
                 <div className='p-4 mt-8 h-full section-reiki'>

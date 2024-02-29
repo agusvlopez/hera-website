@@ -5,6 +5,8 @@ import NotFoundPage from "./pages/NotFoundPage";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import HomePage from './pages/HomePage';
 import About from './components/About';
+import Services from './components/Services';
+import Reiki from './components/Reiki';
 
 const route = createBrowserRouter([
   {
@@ -19,6 +21,14 @@ const route = createBrowserRouter([
       {
         path: 'about',
         element: <About />
+      },
+      {
+        path: 'services',
+        element: <Services />
+      },
+      {
+        path: 'reiki',
+        element: <Reiki />
       },
       {
         path: 'product/:id',

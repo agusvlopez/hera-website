@@ -23,8 +23,8 @@ function Services() {
 
     console.log(services);
     const truncateText = (text) => {
-        if (text.length > 100) {
-            return text.substring(0, 100) + '...';
+        if (text.length > 70) {
+            return text.substring(0, 70) + '...';
         }
         return text;
     };

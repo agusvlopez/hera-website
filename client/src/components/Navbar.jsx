@@ -6,7 +6,7 @@ function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     return (
         <>
-            <nav className='lg:flex lg:justify-between pt-1 lg:pb-4'>
+            <nav className='md:flex md:justify-between pt-1 md:pb-4'>
                 <div className="bgWhite p-2 pb-2 md:p-0 flex justify-between">
                     <button
                         className="focus:outline-none navbar--button md:hidden"
@@ -32,11 +32,11 @@ function Navbar() {
                     </Link>
                 </div>
                 <ul className={`navbar-principal pb-2 ${isMenuOpen ? 'block' : 'hidden'} sm:flex sm:items-center gap-6 p-2`}>
-                    <li> <a href="#about">
-                        Sobre mi</a></li>
-                    <li><Link to="/">Tarot</Link></li>
-                    <li><Link to="/">Ayuda con velas</Link></li>
-                    <li><a href="#reiki">Reiki</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li> <Link to="/about">
+                        Sobre mi</Link></li>
+                    <li><Link to="/services">Servicios</Link></li>
+                    <li><Link to="/reiki">Reiki</Link></li>
                 </ul>
             </nav>
         </>
