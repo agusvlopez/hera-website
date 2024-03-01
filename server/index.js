@@ -6,7 +6,7 @@ import dotenv from "dotenv";
 import { MercadoPagoConfig, Preference } from "mercadopago";
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Configuración de CORS para permitir solicitudes desde el origen de tu aplicación
 const corsOptions = {
