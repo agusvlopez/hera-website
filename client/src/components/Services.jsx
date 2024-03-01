@@ -34,6 +34,7 @@ function Services() {
             <section id='services' className='container max-w-5xl mx-auto mt-6 mb-6 p-4 pt-6 gap-8 h-full'>
                 <h2 className='section-services--subtitle mb-4'>Servicios</h2>
                 <div className='text-center pb-6'>
+                    <p className='text-center font-semibold mb-4'>Horario de atención: de 21hs a 00hs.</p>
                     <p>Trabajo siempre con <span className='font-bold'>energías positivas</span> y la <span className='font-bold'>confidencialidad es absoluta</span></p>
                     <p>No trato con temas relacionados a enfermedades.</p>
                 </div>

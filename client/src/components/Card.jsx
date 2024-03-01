@@ -22,7 +22,7 @@ const Card = ({ id, title, price, description, imageUrl }) => {
                     </div>
                 </div>
                 <div className='flex justify-center pb-4'>
-                    <Link to={`./product/${id}`} key={id} className='card-link'>Me resuena, ¡lo quiero!</Link>
+                    <Link to={`/product/${id}`} key={id} className='card-link'>Me resuena, ¡lo quiero!</Link>
                 </div>
             </Link>
         </div>

@@ -34,9 +34,9 @@ app.post("/create_preference", async (req, res) => {
             ],
             back_urls: {
                 // ESTAS URL DESPUES LAS TENGO QUE CAMBIAR
-                success: "https://www.youtube.com/@onthecode",
-                failure: "https://www.youtube.com/@onthecode",
-                pending: "https://www.youtube.com/@onthecode",
+                success: "https://heratarotvelasyreiki.vercel.app/",
+                failure: "https://heratarotvelasyreiki.vercel.app/",
+                pending: "https://heratarotvelasyreiki.vercel.app/",
             },
             auto_return: "approved",
         };
