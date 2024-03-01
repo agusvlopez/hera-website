@@ -38,7 +38,7 @@ const Product = () => {
     const createPreference = async () => {
 
         try {
-            const response = await axios.post("https://hera-server-wheat.vercel.app/create_preference", {
+            const response = await axios.post("https://hera-server-agusvlopez.vercel.app/create_preference", {
                 title: service.title,
                 quantity: 1,
                 price: service.price,
