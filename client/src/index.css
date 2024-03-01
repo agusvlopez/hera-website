@@ -29,7 +29,7 @@ header {
 header {
   font-weight: 600;
   background-color: var(--bg-primary);
-  border-bottom: 1px solid rgba(128, 128, 128, 0.322);
+  border-bottom: 1px solid #ae83594d;
   box-shadow: -25px 28px 25px -33px rgb(212, 212, 212);
 }
 
@@ -550,7 +550,7 @@ footer {
   justify-content: space-between;
   padding: 20px;
   gap: 10px;
-  border-top: 1px solid rgba(128, 128, 128, 0.322);
+  border-top: 1px solid #ae83594d;
 }
 
 .footer--img {
@@ -568,6 +568,27 @@ footer {
 .footer--contact-icon {
   width: 40px;
   padding: 6px 2px;
+}
+
+.loader {
+  width: 32px;
+  height: 32px;
+  border: 3px solid #FFF;
+  border-bottom-color: var(--color-menu);
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -660,6 +681,7 @@ footer {
   .card {
     min-width: 320px;
   }
+
 
   .card-service--container {
     min-height: 500px;

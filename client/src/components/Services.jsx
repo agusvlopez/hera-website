@@ -38,6 +38,9 @@ function Services() {
                     <p>No trato con temas relacionados a enfermedades.</p>
                 </div>
                 <div className='md:flex gap-1 md:flex-wrap container md:justify-center'>
+                    {servicesLoading &&
+                        <span className='loader'></span>
+                    }
                     {services.map((service) => (
 
                         <Card

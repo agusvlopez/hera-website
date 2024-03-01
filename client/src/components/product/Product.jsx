@@ -63,9 +63,12 @@ const Product = () => {
         <div className='card-service--container'>
             <div className='relative'>
                 {serviceLoading ?
-                    <p>Loading...</p>
+                    <div className='flex justify-center'>
+                        <span className='loader'></span>
+                    </div>
                     :
                     <>
+                        <p className='text-center font-semibold mb-4'>Horario de atención: de 21hs a 00hs.</p>
                         <div className='card-service--data'>
                             <div className="service-grid basis-1/3">
                                 <div className="big-image">
@@ -86,7 +89,7 @@ const Product = () => {
                                 </div>
                             </div>
                             <div className='card-service--text-container basis-2/3'>
-                                <h3 className='card-service--title'>{service.title}</h3>
+                                <h1 className='card-service--title'>{service.title}</h1>
                                 <p className='card-service--price'>${service.price}</p>
                                 <p className='card-service--description'>{service.description}</p>
                                 <div className='card-service--button'>
