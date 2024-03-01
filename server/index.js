@@ -5,17 +5,22 @@ import dotenv from "dotenv";
 // SDK de Mercado Pago
 import { MercadoPagoConfig, Preference } from "mercadopago";
 
+const app = express();
+const port = 3000;
+
+// Configuración de CORS para permitir solicitudes desde el origen de tu aplicación
+const corsOptions = {
+    origin: "https://heratarotvelasyreiki.vercel.app",
+};
+
+app.use(cors(corsOptions));
+app.use(express.json());
+
 dotenv.config();
 console.log(process.env.ACCESS_TOKEN);
 const client = new MercadoPagoConfig({
     accessToken: process.env.ACCESS_TOKEN,
 });
-
-const app = express();
-const port = 3000;
-
-app.use(cors());
-app.use(express.json());
 
 app.get("/", (req, res) => {
     res.send("Soy el server :)");
