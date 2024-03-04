@@ -97,7 +97,7 @@ const Product = () => {
                                     <button onClick={handleBuy}>Obtener</button>
                                 </div>
                                 {buyLoading &&
-                                    <p>Loading...</p>
+                                    <span className='loader'></span>
                                 }
                                 {preferenceId &&
                                     <Wallet initialization={{ preferenceId }} customization={{ texts: { valueProp: 'smart_option' } }} />
