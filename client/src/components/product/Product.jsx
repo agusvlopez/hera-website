@@ -1,7 +1,7 @@
 import { initMercadoPago, Wallet } from '@mercadopago/sdk-react';
 import axios from "axios";
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { getServiceById } from '../../firebase/services';
 
 const Product = () => {

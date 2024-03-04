@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import aboutMe1 from '../covers/me--about-1.jpg';
 import aboutMe2 from '../covers/me--about-2.jpg';
 import aboutMe3 from '../covers/me--about-3.jpg';
@@ -24,7 +25,7 @@ function About() {
                         </div>
                         <span className='section-about--stars-right'></span>
                         <div className='mt-8 mb-8'>
-                            <button>¡Quiero una sesión!</button>
+                            <Link to="/product/A8J82vdgqJmTCIYwmamc"><button>¡Quiero una sesión!</button></Link>
                         </div>
                     </div>
                     <div className="section-about--images">

@@ -7,6 +7,9 @@ import HomePage from './pages/HomePage';
 import About from './components/About';
 import Services from './components/Services';
 import Reiki from './components/Reiki';
+import Success from './pages/mercadopago/Success';
+import Pending from './pages/mercadopago/Pending';
+import Failure from './pages/mercadopago/Failure';
 
 const route = createBrowserRouter([
   {
@@ -33,6 +36,18 @@ const route = createBrowserRouter([
       {
         path: 'product/:id',
         element: <Product />
+      },
+      {
+        path: 'success',
+        element: <Success />
+      },
+      {
+        path: 'pending',
+        element: <Pending />
+      },
+      {
+        path: 'failure',
+        element: <Failure />
       },
     ],
   },
