@@ -118,6 +118,7 @@ button:hover {
   background-repeat: no-repeat;
 }
 
+
 .card-service--data {
   margin: auto;
 }
@@ -336,6 +337,12 @@ button:hover {
   margin: 10px auto;
   max-width: 300px;
   margin-bottom: 20px;
+  transition: transform;
+}
+
+
+.card:hover {
+  transform: scale(1.007);
 }
 
 .card-service--img-container {
