@@ -31,7 +31,7 @@ const Product = () => {
         fetchService();
     }, []);
 
-    initMercadoPago('TEST-1dbc2b77-18df-42ca-96b7-4b672a688d44', {
+    initMercadoPago('APP_USR-c9ed826b-040c-4d7d-8052-87ccec8759f0', {
         locale: "es-AR",
     });
 

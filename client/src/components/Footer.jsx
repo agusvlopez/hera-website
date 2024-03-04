@@ -13,7 +13,7 @@ function Footer() {
                 <div className='footer--menu'>
                     <ul className='navbar-principal p-2'>
                         <li><Link to="/">Home</Link></li>
-                        <li> <Link to="/about">Sobre mi</Link></li>
+                        <li><Link to="/about">Sobre mi</Link></li>
                         <li><Link to="/services">Servicios</Link></li>
                         <li><Link to="/reiki">Reiki</Link></li>
                     </ul>
