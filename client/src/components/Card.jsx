@@ -14,16 +14,16 @@ const Card = ({ id, title, price, description, imageUrl }) => {
                     <div className='card-content--price-container'>
                         <span className='card-price--span'>{price}</span>
                     </div>
-                    <div className='card-content--text-container'>
+                    {/* <div className='card-content--text-container'>
                         <p className='card-text'>{description}</p>
                     </div>
                     <div className='card-content--link-container'>
                         <a href='/'>Leer más</a>
-                    </div>
+                    </div> */}
                 </div>
-                <div className='flex justify-center pb-4'>
+                {/* <div className='flex justify-center pb-4'>
                     <Link to={`/product/${id}`} key={id} className='card-link'>Me resuena, ¡lo quiero!</Link>
-                </div>
+                </div> */}
             </Link>
         </div>
     );

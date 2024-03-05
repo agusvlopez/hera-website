@@ -335,14 +335,17 @@ button:hover {
   border: 1px solid #ccc;
   border-radius: 40px;
   margin: 10px auto;
-  max-width: 300px;
+  max-width: 250px;
   margin-bottom: 20px;
   transition: transform;
+  box-shadow: -15px 32px 75px -33px rgb(202, 202, 202);
 }
 
-
 .card:hover {
+  opacity: 80%;
   transform: scale(1.007);
+  transition: all 0.5s ease;
+  box-shadow: -25px 32px 75px -33px rgb(138, 138, 138);
 }
 
 .card-service--img-container {
@@ -612,6 +615,17 @@ footer {
   background-color: var(--bg-primary);
 }
 
+.alert-icon {
+  background-image: url("./covers/icons/alert.png");
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 2px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
 @keyframes rotation {
   0% {
     transform: rotate(0deg);
@@ -682,7 +696,7 @@ footer {
   }
 
   .card {
-    max-width: 280px;
+    max-width: 250px;
   }
 
   .section-newsLetter--container {
@@ -710,7 +724,7 @@ footer {
   }
 
   .card {
-    min-width: 320px;
+    min-width: 250px;
   }
 
 

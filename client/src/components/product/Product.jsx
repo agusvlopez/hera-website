@@ -93,6 +93,7 @@ const Product = () => {
                                 <h1 className='card-service--title'>{service.title}</h1>
                                 <p className='card-service--price'>${service.price}</p>
                                 <p className='card-service--description'>{service.description}</p>
+                                <p className=''><span className='font-bold '><span className='alert-icon'></span>Importante:</span> Una vez realizada la compra, enviarme el comprobante y/o mensaje dandome detalles de tu pedido por <Link className='card-service--message-link' to="https://www.instagram.com/hera.tarotyvelas/">Mensaje Directo de Instagram</Link> para poder comunicarnos.</p>
                                 <div className='card-service--button'>
                                     <button onClick={handleBuy}>Obtener</button>
                                 </div>

@@ -31,7 +31,7 @@ function Services() {
 
     return (
         <>
-            <section id='services' className='container max-w-5xl mx-auto mt-6 mb-6 p-4 pt-6 gap-8 h-full'>
+            <section id='services' className='container max-w-4xl mx-auto mt-6 mb-6 p-4 pt-6 gap-8 h-full'>
                 <h2 className='section-services--subtitle mb-4'>Servicios</h2>
                 <div className='text-center pb-6'>
                     <p className='text-center font-semibold mb-4'>Horario de atención: de 21hs a 00hs.</p>
