@@ -28,7 +28,7 @@ function Reiki() {
                         </div>
                     </div>
                     <div className='flex justify-center md:justify-end p-6 pt-0'>
-                        <Link to="./product/A8J82vdgqJmTCIYwmamc">
+                        <Link to="/product/A8J82vdgqJmTCIYwmamc">
                             <button>¡Quiero una sesión de Reiki!</button>
                         </Link>
                     </div>
